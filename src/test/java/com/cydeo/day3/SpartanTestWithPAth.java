@@ -40,7 +40,7 @@ public class SpartanTestWithPAth {
 */
 
         Response response = given().accept(ContentType.JSON).and().
-                pathParam("id", "10").when().get("api/spartans/{id}");
+                pathParam("id", "13").when().get("api/spartans/{id}");
 
         assertEquals(200, response.statusCode());
         assertEquals("application/json", response.contentType());
@@ -65,10 +65,10 @@ public class SpartanTestWithPAth {
         System.out.println("phone = " + phone);
 
         //assert the values
-        assertEquals(10, id);
-        assertEquals("Lorenza", name);
+        assertEquals(13, id);
+        assertEquals("Jaimie", name);
         assertEquals("Female", gender);
-        assertEquals(3312820936l, phone);
+        assertEquals("7842554879",phone);
 
 
     }
