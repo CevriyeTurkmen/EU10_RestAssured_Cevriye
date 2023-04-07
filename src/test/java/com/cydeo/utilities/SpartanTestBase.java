@@ -14,14 +14,14 @@ public class SpartanTestBase {
         String dbUsername = "SP";
         String dbPassword = "SP";
 
-       DBUtils.createConnection(dbUrl,dbUsername,dbPassword);
+      // DBUtils.createConnection(dbUrl,dbUsername,dbPassword);
 
     }
 
     @AfterAll
-    public void tearDown(){
+    public static void tearDown(){
 
-        DBUtils.destroy();
+       // DBUtils.destroy();
     }
 
 }
